@@ -24,8 +24,11 @@ struct Args {
     format: String,
 
     /// DPI resolution for rendering
-    #[arg(short, long, default_value_t= 150)]
+    #[arg(short, long, default_value_t=150)]
     dpi: u16,
+
+    #[arg(short, long, default_value=None)]
+    password: Option<String>
 
 }
 
@@ -34,11 +37,13 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     fs::create_dir_all(&args.output_dir)?;
 
-    // Load Pdfium (uses the bundled binary if available) just missing to load libpdfium.so
+    // Load Pdfium (uses the bundled binary if available)
     let pdfium = Pdfium::default();
 
     // Load the PDF document
-    let doc = pdfium.load_pdf_from_file(&args.input, None)?;
+    let doc = pdfium.load_pdf_from_file(&args.input, args.password.as_deref())?;
+
+    println!("✅ PDF started converted to images in {:?}", args.output_dir);
 
     // Render each page
     for (index, page) in doc.pages().iter().enumerate() {
