@@ -3,8 +3,9 @@ name = "pdf2image-cli"
 version = "0.1.0"
 edition = "2024"
 author = ["Darix samani siewe"]
-desciption = "A command-line application that converts PDF files into images."
+description = "A command-line application that converts PDF files into images."
 readme = "README.md"
+license = "MIT OR Apache-2.0"
 repository = "https://github.com/darixsamani/pdf2image-cli"
 
 exlude = ["images", ".*"]
