@@ -2,6 +2,13 @@
 name = "pdf2image-cli"
 version = "0.1.0"
 edition = "2024"
+author = ["Darix samani siewe"]
+desciption = "A command-line application that converts PDF files into images."
+readme = "README.md"
+repository = "https://github.com/darixsamani/pdf2image-cli"
+
+exlude = ["images", ".*"]
+include = ["/src", "libpdfium.so"]
 
 [dependencies]
 clap = { version = "4.5.48", features = ["derive"] }
