@@ -1,6 +1,6 @@
 [package]
 name = "pdf2image-cli"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 author = ["Darix samani siewe"]
 description = "A command-line application that converts PDF files into images."
