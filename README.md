@@ -13,5 +13,11 @@ cargo install pdf2image-cli
 After cloning this repository
 
 ```
-cargo run -- --input Fuzzy.pdf --output-dir images --dpi 150
+cargo run -- --input Fuzzy.pdf --output-dir images --dpi 150 --format png
+```
+
+or after installation 
+
+```
+pdf2image-cli --input Fuzzy.pdf --output-dir images --dpi 150 --format png
 ```
