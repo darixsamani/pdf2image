@@ -19,5 +19,5 @@ cargo run -- --input Fuzzy.pdf --output-dir images --dpi 150 --format png
 or after installation 
 
 ```
-pdf2image-cli --input Fuzzy.pdf --output-dir images --dpi 150 --format png
+pdf2images --input Fuzzy.pdf --output-dir images --dpi 150 --format png
 ```
