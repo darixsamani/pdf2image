@@ -9,7 +9,7 @@ keywords = ["pdf", "cli", "pdf2images", "pdf2image", "images"]
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/darixsamani/pdf2image-cli"
 
-categories = ["Command line utilities", "Command-line interface", ""]
+categories = ["command-line-interface", "command-line-utilities"]
 
 exlude = ["images", ".*"]
 include = ["/src", "libpdfium.so"]
